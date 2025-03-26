@@ -1,4 +1,4 @@
-# electronic_retail
+# electronics_retail
 
 Онлайн платформа-торговой сети электроники
 
