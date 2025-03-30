@@ -5,7 +5,7 @@ from users.models import User
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    """Отображает модели сотрудников в админке."""
+    """Отображает модели сотрудников в админ-панели."""
 
     list_display = ("id", "username",)
     list_filter = ("username",)
