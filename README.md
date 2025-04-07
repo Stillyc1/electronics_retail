@@ -16,11 +16,11 @@
 1. Убедитесь, что у вас установлен [Poetry](https://python-poetry.org/docs/#installation). Если нет, вы можете установить его, следуя официальной документации.
 2. Клонируйте репозиторий:
     ```bash
-    git clone https://github.com/stillyc1/electronic_retail.git
+    git clone https://github.com/stillyc1/electronics_retail.git
     ```
 3. Перейдите в директорию проекта:
     ```bash
-    cd recommendation_system
+    cd electronics_retail
     ```
 4. Установите зависимости:
     ```bash
@@ -45,11 +45,14 @@
    
 ## Функциональность
 
-### Пользовательский интерфейс
-
+### Админ-панель
+1. Реализация представления объектов сети и продуктов
+2. Фильтрация по названию города
+3. admin action, очищающий задолженность перед поставщиком у выбранных объектов
 
 ### API
-
+1. CRUD для модели поставщика
+2. Возможность фильтрации объектов по определённой стране
 
 ## Технологии
 - Python 3.12
@@ -57,7 +60,20 @@
 - Django REST Framework
 - PostgreSQL
 - Другие библиотеки, указанные в pyproject.toml:
+   [tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.1.0"
+django = "^5.1.7"
+djangorestframework = "^3.15.2"
+djangorestframework-simplejwt = "^5.5.0"
+psycopg2-binary = "^2.9.10"
 
+   [tool.poetry.group.dev.dependencies]
+ipython = "^9.0.2"
+flake8 = "^7.1.2"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.1"
 
 ## Лицензия
 Лицензии нет.
